@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pruebas con Mocha</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"></div>
+
+  
+  <script src="https://unpkg.com/mocha/mocha.js"></script>
+  <script src="https://unpkg.com/chai/chai.js"></script>
+
+  <script>
+    mocha.setup('bdd');
+  </script>
+
+  <script src="funciones.js"></script>
+  <script src="pruebas.js"></script>
+
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
